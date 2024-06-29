@@ -16,7 +16,7 @@ public class userEndpoints {
 		
 		Response res=given()
 			.contentType("application/json")
-			.headers("aqccept", "application/json")
+			.headers("accept", "application/json")
 			.body(payload)
 		
 		.when()
