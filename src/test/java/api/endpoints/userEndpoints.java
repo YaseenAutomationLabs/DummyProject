@@ -18,6 +18,7 @@ public class userEndpoints {
 			.contentType("application/json")
 			.headers("accept", "application/json")
 			.body(payload)
+			.auth().basic("user", "password")
 		
 		.when()
 			.post(routes.post_url);
